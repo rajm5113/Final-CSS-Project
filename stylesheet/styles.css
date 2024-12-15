@@ -1,0 +1,114 @@
+.skip-link {
+    position: absolute;
+    top: -40px; /* or any negative value to hide it off-screen */
+    left: 0;
+    background: #100972;
+    color: rgb(244, 90, 43);
+    padding: 8px;
+    z-index: 100;   
+  }
+  
+  .skip-link:focus {
+    top: 0; /* Move it into view when focused */
+  }
+
+  /*<<<<<<<this is .css format of Home Page>>>>>>>> */
+
+  body{
+    background-color:beige;
+    font-family:none;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    background-color: lightgray;
+    padding: 10px 0;
+    text-align: center;
+  }
+  header img{
+    width:100%;
+    height:auto;
+  }
+  nav {
+      display:flex;
+      justify-content: center;
+      background-color: lightgray;
+      padding: 10px 0;
+  }
+  nav ul {
+       list-style-type:none;
+       padding:0;
+       margin: 0;
+       display: flex;
+       justify-content: space-around;
+       width:80%;
+  }
+  nav ul li {
+    margin:0 10px;
+  }
+  nav ul li a {
+    text-decoration:none;
+    color: black;
+    padding: 8px 16px;
+    background-color: rgb(105, 105, 105);
+    border-radius: 5px;
+  }
+  main {
+      padding: 20px;
+
+  }
+  h1 {
+    color: blue;
+    text-align: center;
+  }
+  footer {
+        background-color: lightgrey;
+        text-align: center;
+        padding: 10px 0px;
+        
+  }
+  a {
+     color:blue;
+     text-decoration: underline;
+  }
+  nav ul li a:hover {
+        background-color: rgb(160, 160, 160);
+  }
+  /*<<<<<<<this is .css format of Neighourhood Page>>>>>>>> */
+  /*<<<<<<<Header and the footer will be same as it as only changes happens in main>>>>>*/
+  .grid img {
+    filter: blur(3px);
+    transition: filter 0s ease, border 0s ease;
+    border: none;
+    padding:20px ;
+  }
+  .grid img:hover {
+    filter: none;
+    border: 2px solid blue;
+  }
+  .grid {
+    padding:100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  /*<<<<<<<<this is .css format of Walks in the Park>>>>>>>>*/
+  /*<<<<<<<Header and the footer will be same as it as only changes happens in main>>>>>*/
+  .flex img {
+    filter: blur(3px);
+    transition: filter 0s ease,border 0s ease;
+    border: none;
+    padding:10px;
+  }
+  .flex img:hover {
+    filter: none;
+    border: 2px solid blue;
+  }
+  
+  
+  .flex {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
